@@ -1,0 +1,171 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:black;
+    color:#333;
+}
+.view-btn{
+    width:90%;
+    margin:15px;
+    padding:12px;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#084298;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#fd7d0d;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+}
+
+.navbar h2{
+    font-size:28px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.navbar a:hover{
+    color:#ffd54f;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:rgb(188, 7, 7);
+}
+
+.hero h1{
+    font-size:42px;
+    color:white;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:25px;
+    margin-bottom:25px;
+}
+
+#searchBox{
+    width:420px;
+    max-width:90%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+    font-size:25px;
+}
+
+/* Section */
+
+.title{
+    text-align:center;
+    margin:50px 0 30px;
+    font-size:35px;
+}
+
+/* Cards */
+
+.state-container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-bottom:60px;
+}
+
+.card{
+    background:rgb(220, 164, 164);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    color:#0d6efd;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+/* Footer */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    box-shadow:0 5px 2px rgba(0, 5, 2, 0);
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.navbar ul{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.title{
+font-size:28px;
+}
+
+}
